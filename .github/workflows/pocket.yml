@@ -1,0 +1,16 @@
+name: Push that RSS to pocket
+
+on:
+  schedule:
+    # Every 2 hours
+    - cron: 0 */2 * * *
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ansimorph/rss2pocket@v1
+        with:
+          feeds: https://www.smashingmagazine.com/feed/
+          pocket_consumer_key: ${{ secrets.CONSUMER_KEY }}
+          pocket_access_token: ${{ secrets.ACCESS_TOKEN }}
