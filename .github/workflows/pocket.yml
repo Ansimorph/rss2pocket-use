@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: Ansimorph/rss2pocket@v1
         with:
-          feeds: https://www.smashingmagazine.com/feed/
+          feeds: https://www.smashingmagazine.com/feed/, https://alistapart.com/main/feed/, https://markus.oberlehner.net/blog/index.xml 
           pocket_consumer_key: ${{ secrets.CONSUMER_KEY }}
           pocket_access_token: ${{ secrets.ACCESS_TOKEN }}
