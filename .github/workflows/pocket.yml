@@ -15,3 +15,4 @@ jobs:
           feeds: https://www.smashingmagazine.com/feed/, https://alistapart.com/main/feed/, https://markus.oberlehner.net/blog/index.xml 
           pocket_consumer_key: ${{ secrets.CONSUMER_KEY }}
           pocket_access_token: ${{ secrets.ACCESS_TOKEN }}
+          myToken: ${{ secrets.GITHUB_TOKEN }}
