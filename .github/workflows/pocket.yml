@@ -2,8 +2,8 @@ name: Push that RSS to pocket
 
 on:
   schedule:
-    # Every 4 hours
-    - cron: 0 */4 * * *
+    # Every 8 hours
+    - cron: 0 */8 * * *
   workflow_dispatch:
 
 jobs:
