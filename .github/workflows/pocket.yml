@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: Ansimorph/rss2pocket@v1.1
         with:
-          feeds: https://www.smashingmagazine.com/feed/, https://alistapart.com/main/feed/, https://markus.oberlehner.net/blog/index.xml, https://mxb.dev/feed.xml, https://www.matuzo.at/feed.xml, https://goodnight.at/?format=feed&amp;type=rss, https://ishadeed.com/feed.xml, https://www.synthanatomy.com/feed/atom
+          feeds: https://www.smashingmagazine.com/feed/, https://alistapart.com/main/feed/, https://markus.oberlehner.net/blog/index.xml, https://mxb.dev/feed.xml, https://www.matuzo.at/feed.xml, https://goodnight.at/?format=feed&amp;type=rss, https://ishadeed.com/feed.xml
           pocket_consumer_key: ${{ secrets.CONSUMER_KEY }}
           pocket_access_token: ${{ secrets.ACCESS_TOKEN }}
           my_token: ${{ secrets.GITHUB_TOKEN }}
